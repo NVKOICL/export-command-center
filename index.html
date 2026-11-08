@@ -135,7 +135,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f7f7f5;min-height:100v
   <meta name="apple-mobile-web-app-title" content="ExportCC">
   <meta name="application-name" content="Export Command Center">
   <meta name="msapplication-TileColor" content="#7c3aed">
-  <meta name="description" content="India Export Starter for Andhra Pradesh agri exporters – documents, markets, schemes and AI advisor. Rules checked Nov 2026.">
+  <meta name="description" content="India Export Starter for Andhra Pradesh agri exporters – documents, markets, schemes and every export product. Rules checked Nov 2026.">
 
   <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
@@ -227,7 +227,6 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f7f7f5;min-height:100v
   <button class="tb" onclick="goTab('guide',this)">📖 Guide</button>
   <button class="tb" onclick="goTab('country',this)">🌍 Countries</button>
   <button class="tb" onclick="goTab('startup',this)">🚀 Startup</button>
-  <button class="tb" onclick="goTab('ai',this)">🤖 AI Advisor</button>
   <button class="tb" onclick="goTab('costs',this)">💰 Costs</button>
   <button class="tb" onclick="goTab('roadmap',this)">🎯 Roadmap</button>
   <button class="tb" onclick="goTab('schemes',this)">💎 Schemes</button>
@@ -266,30 +265,6 @@ body{font-family:'Inter',system-ui,sans-serif;background:#f7f7f5;min-height:100v
     </div>
   </div>
   <div id="kitSections"></div>
-</div>
-<div class="panel" id="p-ai">
-  <div class="ai-wrap">
-    <div class="chat-area" id="chatArea"></div>
-    <div class="qp-wrap">
-      <button class="qp" onclick="setQ('Best export products from AP under 2 lakh capital')">AP products under ₹2L</button>
-      <button class="qp" onclick="setQ('Guntur chilli export step by step all documents')">Chilli export docs</button>
-      <button class="qp" onclick="setQ('How to claim RoDTEP and e-BRC after shipment')">RoDTEP claim steps</button>
-      <button class="qp" onclick="setQ('How to find buyers in UAE for Indian spices')">Find UAE buyers</button>
-      <button class="qp" onclick="setQ('How to write a Proforma Invoice for export')">Proforma Invoice format</button>
-      <button class="qp" onclick="setQ('EU MRL pesticide limits for spices exports')">EU MRL requirements</button>
-      <button class="qp" onclick="setQ('Step by step guide for my very first export shipment from Andhra Pradesh')">First shipment guide</button>
-    </div>
-    <div id="aiKeyRow" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:6px 0;font-size:11px;color:#666">
-      <input id="aiKey" type="password" autocomplete="off" placeholder="Paste your Anthropic API key (sk-ant-…)" style="flex:1;min-width:160px;border:1px solid #e8e8e4;border-radius:8px;padding:6px 10px;font-size:12px;font-family:Inter,sans-serif">
-      <button onclick="saveKey()" style="background:#7c3aed;color:white;border:none;border-radius:8px;padding:6px 12px;font-size:12px;cursor:pointer">Save key</button>
-      <button onclick="forgetKey()" style="background:white;color:#7c3aed;border:1px solid #ddd6fe;border-radius:8px;padding:6px 10px;font-size:12px;cursor:pointer">Forget</button>
-      <span id="aiKeyStatus" style="width:100%">Key is stored only in this browser and sent only to api.anthropic.com. Usage is billed to your Anthropic account.</span>
-    </div>
-    <div class="ai-row">
-      <input class="ai-inp" id="aiInp" placeholder="Ask anything about export documents, products, buyers, incentives…" onkeydown="if(event.key==='Enter')sendMsg()">
-      <button class="send-btn" id="sendBtn" onclick="sendMsg()">→</button>
-    </div>
-  </div>
 </div>
 <div class="panel" id="p-costs">
   <div class="cs-hero">
@@ -694,8 +669,6 @@ var S={
   docs:safeRead("ecc4_docs"),
   kit:safeRead("ecc4_kit"),
   cat:"All",selCtry:null,
-  msgs:[{role:"assistant",content:"Namaste! I am your Export AI Advisor.\n\nI am here to help you start your export business from Andhra Pradesh. Ask me anything:\n• Which product to export with low capital\n• Step by step document process\n• How to find buyers in UAE, EU, USA\n• How to claim RoDTEP and Duty Drawback\n• How to write Proforma Invoice or Sales Contract\n\nI will give you practical, AP-specific guidance. 🇮🇳"}],
-  loading:false
 };
 function safeRead(k){try{return JSON.parse(localStorage.getItem(k)||"{}");}catch(e){return {};}}
 function save(){localStorage.setItem("ecc4_docs",JSON.stringify(S.docs));localStorage.setItem("ecc4_kit",JSON.stringify(S.kit));}
@@ -721,7 +694,7 @@ function goTab(id,btn){
   document.querySelectorAll(".tb").forEach(function(b){b.classList.remove("on");});
   document.getElementById("p-"+id).classList.add("on");
   btn.classList.add("on");
-  ({tracker:renderTracker,guide:renderGuide,country:renderCountries,startup:renderStartup,ai:renderAI,costs:renderCosts,schemes:renderSchemes,roadmap:renderRoadmap,products:renderProducts})[id]();
+  ({tracker:renderTracker,guide:renderGuide,country:renderCountries,startup:renderStartup,costs:renderCosts,schemes:renderSchemes,roadmap:renderRoadmap,products:renderProducts})[id]();
 }
 
 function renderCats(){
@@ -867,25 +840,6 @@ function renderStartup(){
 }
 function togKit(id){S.kit[id]=!S.kit[id];save();renderStartup();ping(S.kit[id]?"✅ Done!":"Unchecked");}
 
-function renderAI(){
-  var area=document.getElementById("chatArea");
-  var h="";
-  S.msgs.forEach(function(m){
-    var isU=m.role==="user";
-    h+='<div class="msg '+m.role+'">';
-    if(!isU)h+='<div class="msg-lbl">🤖 Export AI Advisor</div>';
-    h+=m.content.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\n/g,"<br>");
-    h+='</div>';
-  });
-  if(S.loading)h+='<div class="msg ai"><div class="msg-lbl">🤖 Export AI Advisor</div><div style="color:#aaa;margin-top:4px">Thinking…</div></div>';
-  area.innerHTML=h;
-  area.scrollTop=area.scrollHeight;
-}
-function setQ(q){document.getElementById("aiInp").value=q;document.getElementById("aiInp").focus();}
-function getKey(){try{return localStorage.getItem("ecc5_apikey")||"";}catch(e){return "";}}
-function showKeyStatus(){var k=getKey(),el=document.getElementById("aiKeyStatus");if(el)el.textContent=k?("Key saved (…"+k.slice(-4)+") in this browser only. Usage is billed to your Anthropic account."):"No key saved. Key is stored only in this browser and sent only to api.anthropic.com.";}
-function saveKey(){var v=document.getElementById("aiKey").value.trim();if(!v){ping("Paste a key first");return;}try{localStorage.setItem("ecc5_apikey",v);}catch(e){}document.getElementById("aiKey").value="";showKeyStatus();ping("🔑 Key saved");}
-function forgetKey(){try{localStorage.removeItem("ecc5_apikey");}catch(e){}showKeyStatus();ping("Key removed");}
 function exportBackup(){
   var data={app:"Export Command Center",version:5,saved:new Date().toISOString(),docs:S.docs,kit:S.kit};
   var a=document.createElement("a");
@@ -910,49 +864,6 @@ function importBackup(inp){
   };
   r.readAsText(f);
 }
-function sendMsg(){
-  var inp=document.getElementById("aiInp");
-  var txt=inp.value.trim();
-  if(!txt||S.loading)return;
-  inp.value="";
-  S.msgs.push({role:"user",content:txt});
-  S.loading=true;
-  document.getElementById("sendBtn").disabled=true;
-  renderAI();
-  var key=getKey();
-  if(!key){
-    S.msgs.push({role:"assistant",content:"Add your Anthropic API key above (get one at console.anthropic.com → API Keys), press Save key, then ask again."});
-    S.loading=false;document.getElementById("sendBtn").disabled=false;renderAI();return;
-  }
-  // API needs the conversation to start with a user turn: drop the opening greeting
-  var msgs=S.msgs.slice(1).map(function(m){return{role:m.role,content:m.content};});
-  fetch("https://api.anthropic.com/v1/messages",{
-    method:"POST",
-    headers:{"Content-Type":"application/json","x-api-key":key,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
-    body:JSON.stringify({
-      model:"claude-sonnet-5-5",
-      max_tokens:1200,
-      system:"You are an expert Indian export business advisor for a new small-scale agri exporter in Andhra Pradesh with limited capital. Today is "+new Date().toDateString()+". Your knowledge may be out of date: say so when a fee, rate, deadline or rule may have changed, and point to the official portal (dgft.gov.in, icegate.gov.in, indianspices.com, apeda.gov.in, foscos.fssai.gov.in, trade.gov.in). Never invent notification numbers, rates or fees. Facts checked in this app (Nov 2026): IEC fee Rs 500 with annual update 1 Apr-30 Jun; spices need Spices Board CRES (Rs 11,800 merchant / Rs 17,700 manufacturer incl. GST, 3 years; it is the RCMC); rice needs APEDA RCMC and an APEDA contract registration (RCAC, Rs 8/MT) for basmati and non-basmati; rice to EU/UK/EFTA needs EIC inspection; preferential certificates of origin are eCoO via Trade Connect; EU GSP uses REX statement on origin (no EUR.1 for India); Japan tests every Indian chilli consignment for aflatoxin (turmeric only from named manufacturers), no radiation certificate; RoDTEP rates are in Appendix 4R, scheme extended to 31 Dec 2026, credit lands on ICEGATE after the EGM; export proceeds must be realised within 9 months (12 months if invoiced in INR); EPM Niryat Protsahan gives 2.75% interest subvention to MSMEs (UIN from DGFT, cap Rs 50 lakh/IEC/yr); Niryat Disha TRACE reimburses certification costs; AP Food Processing Policy 4.0 gives a capital subsidy whose rate and cap depend on primary vs secondary processing (check APFPS); RELIEF 95% ECGC cover is only for war/political risk on shipments to specified Gulf/West Asia countries; Spices Board SPICED 2026-27 last dates are 30 Nov and 25 Dec 2026; US: MFN plus 10% Section 301 tariff since 24 Jul 2026; UK CETA in force 15 Jul 2026; EFTA TEPA in force 1 Oct 2025; India-EU FTA concluded but not in force. Cover product selection (Guntur chilli, turmeric, rice, pulses), the app's 46 documents, buyers (Spices Board, APEDA, FIEO, trade fairs, B2B portals), Incoterms 2020, HS codes, pricing and payment terms. Be concise, practical, actionable. Use INR. Mention AP resources (Spices Board Guntur, Krishnapatnam and Visakhapatnam ports). Use bullet points. Keep under 250 words unless detail is requested.",
-
-      messages:msgs
-    })
-  }).then(function(r){return r.json().then(function(d){return{ok:r.ok,status:r.status,d:d};});}).then(function(res){
-    var d=res.d,txt="Sorry, could not get a response. Please try again.";
-    if(res.ok&&d.content){txt=d.content.filter(function(b){return b.type==="text";}).map(function(b){return b.text;}).join("\n")||txt;}
-    else if(res.status===401)txt="The API key was rejected (401). Check it at console.anthropic.com and save it again.";
-    else if(res.status===429)txt="Rate limited (429). Wait a minute and try again.";
-    else if(d&&d.error&&d.error.message)txt="API error "+res.status+": "+d.error.message;
-    S.msgs.push({role:"assistant",content:txt});
-    S.loading=false;
-    document.getElementById("sendBtn").disabled=false;
-    renderAI();
-  }).catch(function(){
-    S.msgs.push({role:"assistant",content:"Network error. Please check your connection and try again."});
-    S.loading=false;
-    document.getElementById("sendBtn").disabled=false;
-    renderAI();
-  });
-}
 
 function renderCosts(){
   var h="";
@@ -970,7 +881,7 @@ function renderCosts(){
   document.getElementById("csList").innerHTML=h;
 }
 
-upd();renderTracker();renderAI();showKeyStatus();
+upd();renderTracker();
 </script>
 
 <script>
