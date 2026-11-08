@@ -1579,9 +1579,369 @@ steps:["MPEDA RCMC.","Breed farmed species only; quarantine and condition fish."
 {id:"liveanimals",cat:"Animal Products",icon:"🐄",name:"Live animals (cattle, buffalo, sheep, goats)",hs:"0102 / 0104",ap:"Ongole cattle (Prakasam/Guntur), Nellore sheep — AP breeds in demand abroad",pol:"Restricted — export only under a DGFT licence (Export Facilitation Committee); wild animals Prohibited; beef cattle for slaughter not allowed",board:"DGFT licence; Dept. of Animal Husbandry",
 certs:[[0,"MANDATORY","DGFT export authorisation for live animals.","DGFT export licence"],[0,"MANDATORY","AQCS veterinary health certificate after quarantine.","AQCS veterinary health certificate"],[0,"MARKET-SPECIFIC","Germplasm (semen/embryos) of indigenous breeds needs Department of Animal Husbandry clearance.","Germplasm clearance"]],
 mk:[["Gulf / Malaysia / Brazil","Breeding animals and Ongole germplasm."]],
-steps:["Apply to DGFT for licence with purpose and buyer.","Quarantine and vet testing at AQCS.","Approved livestock carrier."],risk:["Licence refusals; animal-welfare rules."],sch:[],chk:"Current DGFT licensing practice for live sheep/goats."}
+steps:["Apply to DGFT for licence with purpose and buyer.","Quarantine and vet testing at AQCS.","Approved livestock carrier."],risk:["Licence refusals; animal-welfare rules."],sch:[],chk:"Current DGFT licensing practice for live sheep/goats."},
+{id:"pharma",cat:"Pharma & Chemicals",icon:"💊",name:"Medicines — formulations (tablets, capsules, injectables)",hs:"3003 / 3004",ap:"Visakhapatnam (JN Pharma City, Parawada), Nakkapalli, Srikakulam; Hyderabad cluster next door",pol:"Free — narcotic/psychotropic drugs need NDPS export authorisation",board:"Pharmexcil — RCMC",
+certs:[[0,"MANDATORY","Drug manufacturing licence from the State Drugs Control / CDSCO for the product (contract manufacturing allowed via a licensed loan-licence site).","Drug manufacturing licence"],[0,"MANDATORY","Certificate of Pharmaceutical Product (COPP, WHO format) + WHO-GMP certificate, issued by CDSCO/State regulator — needed for registration in most importing countries.","COPP + WHO-GMP"],[0,"MANDATORY","Product registration (dossier/CTD) in the importing country BEFORE first commercial shipment; the importer usually holds the licence.","Destination product registration"],[18,"MANDATORY","Batch CoA per pharmacopoeia (IP/BP/USP)."],[0,"MARKET-SPECIFIC","USA: FDA establishment registration, ANDA approval, FDA inspection. EU: EU-GMP and marketing authorisation.","US FDA / EU GMP approvals"],[0,"MARKET-SPECIFIC","Narcotic and psychotropic drugs: export authorisation from the Narcotics Commissioner per consignment.","NDPS export authorisation"]],
+mk:[["Africa / CIS / LatAm / SE Asia","Registration via local importer with COPP + dossier; 1–3 years; some need pre-shipment inspection (e.g. Nigeria NAFDAC clean report)."],["USA","FDA-approved ANDA + FDA-inspected plant — not a starter market."],["EU / UK","EU-GMP + marketing authorisation; Qualified Person batch release in EU."]],
+steps:["Pick 5–10 off-patent molecules and a WHO-GMP contract manufacturer.","Pharmexcil RCMC; get COPP and a CTD dossier from the manufacturer.","Find an importer-distributor who files registration in their country.","After approval: PI, batch CoA, ship (cold chain if needed)."],
+risk:["Registration takes years — no sales until approved.","Product recalls / quality failures carry legal liability.","NDPS items shipped without authorisation are a criminal offence."],sch:["S1","S2","S5","S8","M1","M3"],chk:"RoDTEP rate for your Ch.30 tariff line in Appendix 4R; COPP issuing practice with your State drugs controller."},
+{id:"api",cat:"Pharma & Chemicals",icon:"⚗️",name:"Bulk drugs (APIs) & drug intermediates",hs:"2933 / 2934 / 2941 / 2942 (Ch.29)",ap:"Visakhapatnam (JN Pharma City), Srikakulam (Pydibhimavaram), Nakkapalli",pol:"Free — except NDPS precursors (e.g. ephedrine, pseudoephedrine, acetic anhydride) and narcotic APIs, which need NCB / Narcotics Commissioner clearance",board:"Pharmexcil — RCMC (bulk drugs & intermediates)",
+certs:[[0,"MANDATORY","Drug manufacturing licence covering the API.","Drug manufacturing licence"],[18,"MANDATORY","CoA per pharmacopoeia + impurity profile; stability data on request."],[0,"MARKET-SPECIFIC","EU: Written Confirmation from CDSCO per site and per API (Directive 2011/62/EU) — India is not on the EU equivalence list, so it is needed unless an EU authority has inspected the site (waiver); CEP from EDQM helps.","EU Written Confirmation / CEP"],[0,"MARKET-SPECIFIC","USA: Drug Master File (DMF) and FDA-registered plant.","US DMF"],[0,"MANDATORY","MSDS/SDS; if hazardous, UN number and IMDG/IATA DG declaration.","SDS + DG declaration"],[0,"MARKET-SPECIFIC","Precursors and narcotic APIs: NCB registration / pre-export notification or NDPS export authorisation.","NCB / NDPS clearance"]],
+mk:[["EU","Written Confirmation mandatory; GMP audits by buyers."],["USA","DMF + FDA inspection history."],["China / LatAm / Africa","Registration of the API site with local regulator (e.g. China NMPA, Brazil ANVISA CADIFA)."]],
+steps:["Choose manufactured or traded APIs; check NDPS precursor lists.","Pharmexcil RCMC; get DMF/CEP access letter from the maker.","Sample + CoA to buyer; GMP audit.","Ship with SDS and DG papers as needed."],
+risk:["Dumping/pricing pressure from China.","EU shipments stopped at border without Written Confirmation.","Precursor diversion investigations."],sch:["S1","S2","S3","S5","S8"],chk:"Whether your API is a controlled precursor (NCB list); RoDTEP coverage for Ch.29 lines."},
+{id:"ayush",cat:"Pharma & Chemicals",icon:"🌿",name:"AYUSH (Ayurvedic, Siddha, Unani, homeopathic) & herbal supplements",hs:"3003 / 3004 / 1302 / 2106",ap:"Herbs from Eastern Ghats (Araku, Rampachodavaram), Seshachalam; manufacturers in Vijayawada, Guntur, Tirupati",pol:"Free — wild-collected medicinal plants may be Restricted; CITES-listed herbs need permits",board:"AYUSHEXCIL (added to FTP Appendix 2T by PN 23/2023, 31 Jul 2023) — or Pharmexcil / SHEFEXIL (herbs, nutraceuticals)",
+certs:[[0,"MANDATORY","AYUSH drug manufacturing licence from the State AYUSH licensing authority.","AYUSH manufacturing licence"],[18,"MANDATORY","CoA incl. heavy metals (lead, arsenic, mercury, cadmium), microbial load and pesticide residues."],[0,"STRONGLY RECOMMENDED","WHO-GMP / COPP for herbal products — asked by many registration authorities.","WHO-GMP / COPP (AYUSH)"],[0,"MARKET-SPECIFIC","Biological Diversity Act: commercial use of Indian bio-resources needs State/National Biodiversity Board intimation or approval.","Biodiversity Board clearance"],[0,"MARKET-SPECIFIC","CITES permit for listed species (e.g. some Dendrobium, Saussurea, Nardostachys).","CITES permit"]],
+mk:[["USA","Usually sold as dietary supplements: FDA food-facility registration, cGMP for supplements, no disease claims; heavy-metal scrutiny (Prop 65 in California)."],["EU","Traditional herbal medicine registration or food-supplement route; many Ayurvedic products blocked for heavy metals."],["Gulf / Russia / Africa","Registration as herbal medicine via importer."]],
+steps:["Decide route: medicine vs food supplement in each market.","Licence + WHO-GMP manufacturer; heavy-metal testing.","AYUSHEXCIL RCMC; register with importer.","Ship with CoA and labels in the destination format."],
+risk:["Heavy-metal failures (bhasma products).","Disease claims on labels = seizure in US/EU."],sch:["S1","S2","M1"],chk:"Biodiversity Act obligations after the 2023 amendment; which council your exact product falls under."},
+{id:"chemicals",cat:"Pharma & Chemicals",icon:"🧪",name:"Industrial chemicals — organic & inorganic",hs:"Ch.28 / Ch.29",ap:"Visakhapatnam (APIIC chemical parks, Atchutapuram SEZ), Nellore, Kakinada",pol:"Free mostly — ODS/HFCs (2903) Restricted; NDPS precursors, CWC chemicals (SCOMET Cat 1) and some inorganic items controlled",board:"CHEMEXCIL — RCMC",
+certs:[[0,"MANDATORY","Safety Data Sheet (16-section GHS SDS) + UN number, packing group; IMDG dangerous-goods declaration and UN-approved packaging for hazardous cargo.","SDS + IMDG DG declaration"],[18,"MANDATORY","CoA to buyer specification."],[0,"MARKET-SPECIFIC","EU REACH: substance must be registered — use an EU Only Representative (OR) if you sell more than 1 t/year; CLP labelling.","EU REACH via Only Representative"],[0,"MARKET-SPECIFIC","USA: TSCA inventory listing / certification by importer; Korea K-REACH, Turkey KKDIK, UK REACH similar.","TSCA / K-REACH / UK REACH"],[0,"MARKET-SPECIFIC","SCOMET authorisation for CWC-scheduled or dual-use chemicals (Cat 1/3); NCB clearance for drug precursors.","SCOMET / NCB clearance"]],
+mk:[["EU / UK","REACH registration through OR is the gate — budget for it."],["USA","TSCA certification; anti-dumping duties on some Indian chemicals."],["Asia / Middle East","Mostly SDS + CoA; Korea K-REACH, Taiwan TCCSCA, Turkey KKDIK pre-registration."]],
+steps:["Check ITC(HS) line, SCOMET Cat 1, NCB precursor list.","CHEMEXCIL RCMC; prepare SDS and DG classification.","Appoint EU OR / check TSCA before quoting.","Book DG-accepting container line; ship with IMDG papers."],
+risk:["Mis-declared DG cargo → heavy fines, shipping-line bans.","Anti-dumping duties in destination."],sch:["S1","S2","S3","S5","S8","M1"],chk:"Your item's SCOMET / NCB status and RoDTEP rate (Ch.28/29 lines)."},
+{id:"agrochem",cat:"Pharma & Chemicals",icon:"🧴",name:"Pesticides & agrochemicals",hs:"3808 / 2930–2933 (technical)",ap:"Visakhapatnam, Nellore, Guntur formulators",pol:"Free mostly — methyl bromide 3808.91.22 and ODS mixtures Restricted; PIC (Rotterdam) chemicals need export notification",board:"CHEMEXCIL — RCMC (agrochemicals)",
+certs:[[0,"MANDATORY","Insecticides Act: manufacturing licence; CIB&RC registration or 'export-only' permission for the product.","CIB&RC registration / export permission"],[0,"MANDATORY","Registration of the product in the importing country (data dossier, often via importer).","Destination pesticide registration"],[0,"MANDATORY","GHS SDS, UN number, IMDG declaration (most pesticides are Class 6.1 or 9).","SDS + DG declaration"],[18,"MANDATORY","CoA (active content, impurities)."],[0,"MARKET-SPECIFIC","Rotterdam Convention Annex III actives: export notification and importer-country consent.","PIC export notification"]],
+mk:[["Africa / LatAm / SE Asia","Main markets; registration by local distributor; generic actives."],["EU / USA","Strict registration (EU active-substance approval, US EPA) — rarely direct for small exporters."]],
+steps:["Pick generics registered in target country.","CIB&RC export permission + CHEMEXCIL RCMC.","Importer files registration; supply data package.","Ship as DG with SDS."],
+risk:["Banned-active exports damage reputation and may be refused.","Registration costs and delays."],sch:["S1","S2","S5"],chk:"CIB&RC procedure for export-only registration; PIC list for your active."},
+{id:"dyes",cat:"Pharma & Chemicals",icon:"🎨",name:"Dyes, pigments, paints & inks",hs:"Ch.32",ap:"Visakhapatnam, Vijayawada, Sri City paint plants",pol:"Free",board:"CHEMEXCIL (dyes, intermediates); CAPEXIL (paints)",
+certs:[[0,"MANDATORY","SDS + DG declaration for solvent-based paints (Class 3).","SDS + DG declaration"],[18,"MANDATORY","CoA / shade card."],[0,"MARKET-SPECIFIC","EU REACH registration and Annex XVII limits (azo amines, lead/heavy metals in paints).","REACH compliance"],[0,"CONSIDER","ZDHC / Oeko-Tex ECO PASSPORT listing — textile buyers ask for it.","ZDHC / ECO PASSPORT"]],
+mk:[["EU","REACH + restricted substances."],["Bangladesh / Vietnam / Turkey","Textile-dye demand; ZDHC compliance."],["USA","TSCA; lead-paint limits for consumer coatings."]],
+steps:["Confirm REACH/TSCA status.","Prepare SDS and CoA.","Ship (DG if solvent)."],risk:["Restricted-substance failures in buyer tests."],sch:["S1","S2","S5"],chk:""},
+{id:"cosmetics",cat:"Pharma & Chemicals",icon:"💄",name:"Cosmetics, essential oils, soaps & toiletries",hs:"3301 / 3303–3307 / 3401",ap:"Kadapa-Kurnool (essential-oil crops), Vijayawada, Tirupati manufacturers",pol:"Free — sandalwood oil & agar oil Restricted",board:"CHEMEXCIL — RCMC (cosmetics, toiletries, essential oils)",
+certs:[[0,"MANDATORY","Cosmetic manufacturing licence (State licensing authority under Drugs & Cosmetics Act / Cosmetics Rules 2020).","Cosmetics manufacturing licence"],[18,"MANDATORY","CoA, microbial test, stability."],[0,"MARKET-SPECIFIC","EU/UK: Responsible Person, Product Information File, safety assessment, CPNP/SCPN notification, banned/restricted ingredient annexes.","EU CPNP + Responsible Person"],[0,"MARKET-SPECIFIC","USA: MoCRA facility registration + product listing; FDA labelling.","US MoCRA registration"],[0,"MARKET-SPECIFIC","Halal certificate for OIC markets; GCC conformity (e.g. Saudi SFDA notification).","Halal / GCC notification"],[0,"MARKET-SPECIFIC","Essential oils as DG (flammable, Class 3) — SDS + IMDG/IATA.","SDS + DG declaration"]],
+mk:[["EU / UK","Responsible Person + CPNP before sale."],["USA","MoCRA; no drug claims."],["Gulf","Halal + SFDA/municipality registration."]],
+steps:["Licence or contract manufacturer.","Choose markets and appoint EU RP / US agent.","CHEMEXCIL RCMC; labels per destination.","Ship."],risk:["Drug-like claims → product treated as medicine.","Banned ingredients (e.g. certain preservatives, hydroquinone)."],sch:["S1","S2","M1"],chk:""},
+{id:"fireworks",cat:"Pharma & Chemicals",icon:"🎆",name:"Fireworks, safety matches & industrial explosives",hs:"3601–3606",ap:"Limited in AP (Sivakasi, TN is the hub); explosives plants exist in AP",pol:"Free — military explosives under SCOMET; PESO licensing applies",board:"CAPEXIL — RCMC",
+certs:[[0,"MANDATORY","PESO licences for manufacture, possession and transport to port.","PESO licence"],[0,"MANDATORY","UN classification (Class 1 explosives / Class 4.1 matches), UN-approved packaging, IMDG declaration; few lines accept Class 1.","IMDG Class 1 / 4.1 papers"],[0,"MARKET-SPECIFIC","Destination import licence and product certification (EU CE marking for pyrotechnics, US CPSC/DOT approval).","Destination pyrotechnic approval"]],
+mk:[["EU","CE marking under Pyrotechnic Articles Directive via notified body."],["USA","DOT EX approval number + CPSC rules."],["Africa / Middle East","Import permits from police/interior ministry."]],
+steps:["Licensed manufacturer + PESO export transport licence.","Classification and packaging test.","Book Class 1-accepting carrier; ship."],risk:["Accidents; carrier refusals; seizures for wrong classification."],sch:["S1","S2"],chk:"Military / commercial explosive SCOMET categories."},
+{id:"granite",cat:"Minerals & Metals",icon:"🪨",name:"Granite & natural stone (blocks, slabs, tiles)",hs:"2516 (blocks) / 6802 (slabs, tiles, monuments)",ap:"Prakasam — Chimakurthy (Black Galaxy), Ongole; Chittoor, Srikakulam, Anantapur",pol:"Free",board:"CAPEXIL — RCMC (granite & natural stones)",
+certs:[[0,"MANDATORY","Mineral transit permit / dispatch permit from AP Mines & Geology for raw blocks from the quarry to port.","Mineral transit permit"],[23,"STRONGLY RECOMMENDED","Pre-shipment inspection of slab thickness, polish, cracks — disputes are common."],[20,"MARKET-SPECIFIC","Fumigation / ISPM-15 for wooden crates and A-frames."],[0,"MARKET-SPECIFIC","EU: CE marking + Declaration of Performance for flooring/cladding tiles and slabs under the Construction Products Regulation (EN 1469, EN 12057, EN 12058 — verify).","EU CPR CE marking"],[0,"CONSIDER","Radon/radioactivity test reports sometimes asked by US buyers for countertops.","Radioactivity test report"]],
+mk:[["China","Main buyer of raw Black Galaxy blocks."],["USA","Countertops/slabs; anti-dumping history on some stone from other countries — check."],["EU / UK","CE + DoP for building use; ethical sourcing (child labour) checks."],["Middle East","Monuments and slabs."]],
+steps:["Buy blocks from leased quarries with valid permits.","Process at Ongole/Chimakurthy cutting units.","CAPEXIL RCMC; inspection; crate with ISPM-15 wood.","Ship from Krishnapatnam / Kakinada / Chennai."],
+risk:["Cracked/thin slabs in transit.","Illegal-quarry stock seized."],sch:["S1","S2","S3","M1"],chk:"EU CPR standards for your product type."},
+{id:"quartz",cat:"Minerals & Metals",icon:"💎",name:"Quartz, feldspar, mica & industrial minerals",hs:"2506 (quartz) / 2529 (feldspar) / 2525 (mica)",ap:"Nellore (Gudur–Sydapuram quartz, feldspar, mica belt), Prakasam, Kadapa",pol:"Free for quartz lumps/powder, feldspar, mica — but silica/quartz SANDS (2505) and other minerals 2530.90.99 are Restricted",board:"CAPEXIL (processed minerals); EEPC (mica-based products)",
+certs:[[0,"MANDATORY","Mineral transit permit from AP Mines & Geology.","Mineral transit permit"],[18,"MANDATORY","Chemical analysis (SiO2, Fe2O3 etc.) from an approved lab."],[23,"RECOMMENDED","Independent sampling & analysis at load port (SGS/Intertek)."]],
+mk:[["China / Taiwan / Korea","High-purity quartz for silicon, glass, solar."],["Gulf","Engineered-stone makers."]],
+steps:["Check exact HS line — sand (2505) needs DGFT licence.","Lab analysis; sample to buyer.","Ship bulk/bags with analysis certificate."],risk:["Grade disputes on SiO2/Fe; illegal mining stock."],sch:["S1","S2"],chk:"Whether your mineral falls under 2530.90.99 (Restricted)."},
+{id:"barytes",cat:"Minerals & Metals",icon:"⛏️",name:"Barytes (barium sulphate)",hs:"2511.10",ap:"Mangampet, Kadapa (YSR) — one of the world's largest barytes deposits, mined by APMDC",pol:"Restricted for Grade A (sp. gr. above 4.2) and Grade B (4.10–4.20); lower grades (C, D, waste) Free — confirm the exact specific-gravity note in Schedule 2",board:"CAPEXIL — RCMC",
+certs:[[0,"MANDATORY","DGFT export authorisation for Grade A/B.","DGFT export authorisation"],[18,"MANDATORY","Specific-gravity and chemical analysis (BaSO4, water-soluble alkaline earth metals per API 13A for drilling grade)."],[23,"STRONGLY RECOMMENDED","Load-port sampling and SG certificate."]],
+mk:[["USA / Gulf / Russia","Oil-well drilling grade (API 13A)."]],
+steps:["Buy through APMDC e-auctions / tenders.","Grind to API spec.","Licence for A/B grade; ship with SG certificate."],risk:["Grade mis-declaration; licence refusal for high grades."],sch:["S1","S2"],chk:"DGFT practice for Grade A/B authorisations."},
+{id:"beachsand",cat:"Minerals & Metals",icon:"🏖️",name:"Beach-sand minerals (ilmenite, rutile, zircon, garnet, sillimanite, monazite)",hs:"2614 / 2615 / 2513.20 / 2508.50 / 2612",ap:"Deposits only — Srikakulam, Bhimunipatnam, Machilipatnam; no AP production since 2019 (DAE reserved deposits for government entities, e.g. APMDC)",pol:"STE — export only through Indian Rare Earths Ltd (IREL); private exporters cannot export these",board:"IREL (canalising agency); DAE / AERB for atomic minerals",
+certs:[[0,"MANDATORY","Only IREL may export — a private firm can at most buy downstream products (e.g. synthetic rutile, titanium pigment) that are not canalised.","IREL canalisation"],[0,"MANDATORY","DAE / AERB clearance for monazite and radioactive minerals.","DAE / AERB clearance"]],
+mk:[["All","Via IREL only."]],
+steps:["Do not contract these ores yourself.","Consider value-added products (TiO2 pigment, zirconia) — check their own HS policy."],risk:["Illegal beach-sand exports are prosecuted."],sch:[],chk:"Policy for value-added titanium/zirconium products."},
+{id:"ironore",cat:"Minerals & Metals",icon:"🧲",name:"Iron ore & pellets",hs:"2601",ap:"Anantapur, Kurnool (small deposits); Visakhapatnam & Gangavaram ports handle ore",pol:"Free up to 64% Fe — above 64% Fe canalised through MMTC (STE) under Ch.26 Policy Condition 1",board:"CAPEXIL (bulk minerals) / FIEO",
+certs:[[0,"MANDATORY","Fe above 64% only via MMTC (Ch.26 Policy Condition 1). Export duty: 30% on lumps and fines above 58% Fe, nil below 58% and on pellets (Notif. 57/2022-Cus — verify still current).","Canalisation + export duty check"],[0,"MANDATORY","Mineral transit permit and IBM (Indian Bureau of Mines) registration for traders/exporters.","IBM registration + transit permit"],[23,"MANDATORY","Load-port sampling, draft survey and Fe analysis (SGS etc.)."]],
+mk:[["China","Main buyer of fines."]],
+steps:["Confirm grade vs canalisation.","Register with IBM; secure legal stock.","Check CBIC export duty on your grade.","Ship bulk with draft survey and analysis."],risk:["Export duty changes overnight.","Illegal-mining stock (post-2011 bans) seized."],sch:[],chk:"Current Ch.26 Policy Condition 1 text and export duty on iron ore."},
+{id:"steel",cat:"Minerals & Metals",icon:"🏗️",name:"Iron & steel products and ferro-alloys",hs:"72 / 73",ap:"Visakhapatnam (RINL Vizag Steel), Anantapur and Kurnool rerollers, Vizianagaram (Garividi) ferro-alloy units",pol:"Free",board:"EEPC — RCMC",
+certs:[[0,"MANDATORY","Mill test certificate (EN 10204 type 3.1) from the producing mill.","Mill test certificate 3.1"],[23,"STRONGLY RECOMMENDED","Third-party inspection of dimensions/grade."],[0,"MARKET-SPECIFIC","EU CBAM: the EU importer needs your plant's embedded-emissions data; liability from 1 Jan 2026. Since 1 Jul 2026 the EU steel safeguard is replaced by Reg. (EU) 2026/1384: country-allocated tariff quotas, 50% duty above quota.","EU CBAM + steel quota check"],[0,"MARKET-SPECIFIC","USA: Section 232 tariffs on steel and derivatives (rate changes — verify).","US Section 232 check"],[0,"MARKET-SPECIFIC","CE (EN 1090) for structural steel to EU.","EN 1090 CE marking"]],
+mk:[["EU","CBAM + country tariff quotas (50% out-of-quota duty) under Reg. 2026/1384."],["USA","Section 232 tariffs; anti-dumping on some products."],["Middle East / Africa / Nepal","Main growth markets."]],
+steps:["Buy from mill with 3.1 certificate.","EEPC RCMC; collect emissions data for EU.","Inspection; ship."],risk:["Tariff/quota changes; anti-dumping."],sch:["S1","S2","S3","S5","S8"],chk:"RoDTEP coverage for Ch.72/73; current US Section 232 rate."},
+{id:"cement",cat:"Minerals & Metals",icon:"🧱",name:"Cement & clinker",hs:"2523",ap:"Kurnool, Nandyal, Palnadu (Guntur), Kadapa — AP is a large cement belt",pol:"Free",board:"CAPEXIL — RCMC (cement & clinker)",
+certs:[[18,"MANDATORY","Test certificate to the buyer's standard (EN 197, ASTM C150)."],[23,"RECOMMENDED","Load-port sampling and draft survey."],[0,"MARKET-SPECIFIC","EU CBAM emissions data for cement/clinker.","EU CBAM emissions data"],[0,"MARKET-SPECIFIC","Destination product certification (e.g. SONCAP, SASO, KEBS).","Destination conformity certificate"]],
+mk:[["Sri Lanka / Bangladesh / Gulf / East Africa","Bagged cement and clinker bulk."]],
+steps:["Supply contract with a plant.","Test certificates; destination conformity.","Ship bulk/bags."],risk:["Low margins; freight-sensitive."],sch:["S1","S2"],chk:""},
+{id:"charcoal",cat:"Minerals & Metals",icon:"🥥",name:"Coconut-shell charcoal & activated carbon",hs:"4402.20.10 / 3802.10",ap:"Konaseema, East & West Godavari, Srikakulam (Uddanam)",pol:"Free — coconut-shell charcoal is not listed; OTHER charcoal (4402.20.90) is Prohibited except to Bhutan",board:"CAPEXIL — RCMC (coconut-shell charcoal, activated carbon)",
+certs:[[18,"MANDATORY","Analysis (fixed carbon, ash, moisture; iodine number for activated carbon)."],[0,"MANDATORY","Dangerous-goods check: charcoal (UN1361) and activated carbon (UN1362) are IMDG Class 4.2 unless a self-heating test (UN N.4) shows exemption — carriers demand the report.","UN N.4 self-heating test / DG papers"],[20,"MARKET-SPECIFIC","Fumigation if buyer requires."]],
+mk:[["China / Sri Lanka / Japan / EU","Activated-carbon makers buy shell charcoal; EU/US buy activated carbon for water treatment (NSF/ANSI 61 in US)."]],
+steps:["Collect shells, kiln-carbonise, sieve.","Self-heating test and analysis.","Ship in jumbo bags."],risk:["Fires in containers if DG rules ignored."],sch:["S1","S2","M1"],chk:"IMDG special provisions for your product."},
+{id:"autoparts",cat:"Engineering & Electronics",icon:"🚗",name:"Auto components & vehicles",hs:"8708 / 8714 / 8703 / 8711",ap:"Anantapur (Kia plant, Penukonda suppliers), Sri City, Tirupati, Visakhapatnam",pol:"Free",board:"EEPC — RCMC (motor vehicles, auto components, two/three-wheelers)",
+certs:[[0,"STRONGLY RECOMMENDED","IATF 16949 quality certification — OEM/Tier-1 buyers require it.","IATF 16949"],[0,"MARKET-SPECIFIC","Type approval / E-mark (UNECE regs) for lamps, brakes, glass, tyres; vehicles need destination homologation (EU WVTA, GCC, ASEAN).","E-mark / homologation"],[0,"MARKET-SPECIFIC","PPAP and IMDS material data for OEM supply.","PPAP + IMDS"],[0,"MARKET-SPECIFIC","USA: FMVSS/DOT self-certification for regulated parts.","FMVSS / DOT"]],
+mk:[["USA / EU","Aftermarket and OEM; Section 232 auto-parts tariffs in USA (verify)."],["Africa / LatAm / Gulf","Aftermarket and two-wheelers."]],
+steps:["Pick parts and get IATF or buyer approval.","EEPC RCMC; homologation where regulated.","PPAP samples; ship."],risk:["Recall liability; tariff changes."],sch:["S1","S2","S3","S5","S8","M1"],chk:"US tariff on auto parts at time of contract."},
+{id:"machinery",cat:"Engineering & Electronics",icon:"⚙️",name:"Machinery, pumps, motors & tools",hs:"Ch.84 / 8501 / Ch.82",ap:"Visakhapatnam, Vijayawada, Sri City, Hindupur",pol:"Free — some machine tools/dual-use items need SCOMET (Cat 3/8)",board:"EEPC — RCMC",
+certs:[[0,"MARKET-SPECIFIC","EU: CE marking (Machinery Directive 2006/42/EC; Machinery Regulation 2023/1230 applies from 20 Jan 2027), Low Voltage & EMC directives, Declaration of Conformity, technical file.","EU CE marking"],[0,"MARKET-SPECIFIC","North America: UL/CSA certification for electrical machinery.","UL / CSA"],[0,"MARKET-SPECIFIC","SCOMET authorisation for listed CNC machine tools, high-spec pumps/valves etc.","SCOMET authorisation"],[23,"RECOMMENDED","Factory acceptance test / inspection."]],
+mk:[["EU","CE essential."],["USA","UL; anti-dumping on some products."],["Africa / Middle East / SAARC","Project and agri-machinery demand."]],
+steps:["Check SCOMET list for your item.","Certify (CE/UL).","EEPC RCMC; FAT; ship with manuals."],risk:["Uncertified machinery seized; warranty claims."],sch:["S1","S2","S3","S5","S8","M1"],chk:"SCOMET Cat 3 control parameters for your machine."},
+{id:"electronics",cat:"Engineering & Electronics",icon:"📱",name:"Electronics, mobiles & components",hs:"Ch.85 / 8471 / 8517",ap:"Sri City, Tirupati EMC (Renigunta), Kopparthy (Kadapa), Visakhapatnam",pol:"Free — e-cigarettes 8543.40 Prohibited; encryption and some electronics need SCOMET (Cat 8)",board:"ESC (electronics, computers); MEDEPC (mobile phones & devices); TEPC (telecom)",
+certs:[[0,"MARKET-SPECIFIC","EU: CE (RED/LVD/EMC), RoHS, WEEE registration, EU Battery Regulation; UKCA for UK.","CE + RoHS + WEEE"],[0,"MARKET-SPECIFIC","USA: FCC authorisation for radio devices.","FCC"],[0,"MANDATORY","Lithium batteries: UN38.3 test summary + IATA/IMDG packing.","UN38.3 + DG packing"],[0,"MARKET-SPECIFIC","SCOMET Cat 8 for listed electronics/encryption.","SCOMET authorisation"]],
+mk:[["USA / EU / UAE","Phones, components; strong PLI-led growth."]],
+steps:["Map certifications per market.","ESC/MEDEPC RCMC.","Battery DG compliance; ship."],risk:["Uncertified radio gear blocked; battery fires."],sch:["S1","S2","S3","S5","S8"],chk:"SCOMET status of encryption features."},
+{id:"meddevices",cat:"Engineering & Electronics",icon:"🩺",name:"Medical devices & surgical instruments",hs:"9018–9022 / 3005 / 3006",ap:"AP MedTech Zone (AMTZ), Visakhapatnam — dedicated medical-device park",pol:"Free",board:"EPCMD (Export Promotion Council for Medical Devices; Appendix 2T by PN 18/2023) for the 151 listed devices; PLEXCONCIL (disposables, IOLs)",
+certs:[[0,"MANDATORY","CDSCO manufacturing licence under Medical Device Rules 2017 (class-wise).","CDSCO device licence"],[0,"STRONGLY RECOMMENDED","ISO 13485 QMS certificate.","ISO 13485"],[0,"MARKET-SPECIFIC","EU: CE under MDR 2017/745 via notified body (Class I self-declared).","EU MDR CE"],[0,"MARKET-SPECIFIC","USA: FDA establishment registration, device listing, 510(k) for most Class II.","US FDA 510(k)"],[0,"CONSIDER","Free Sale Certificate from CDSCO for registration abroad.","Free Sale Certificate"]],
+mk:[["Africa / SE Asia / LatAm","Registration with FSC + ISO 13485."],["EU / USA","MDR CE / FDA."]],
+steps:["Licensed maker (AMTZ units).","ISO 13485; CE/FDA as needed.","RCMC; register with importer; ship."],risk:["Regulatory recalls; sterility failures."],sch:["S1","S2","S3","S5","M1"],chk:"Whether your device is in EPCMD's list of 151 devices."},
+{id:"defence",cat:"Engineering & Electronics",icon:"🛡️",name:"Defence items, arms & ammunition",hs:"Ch.93 + SCOMET Cat 6 items",ap:"Defence & aerospace units around Anantapur, Visakhapatnam",pol:"Controlled — SCOMET Cat 6 (munitions list) authorisation from Dept. of Defence Production; civilian firearms under Arms Act (MHA)",board:"DDP (MoD) / DGFT; EEPC for RCMC",
+certs:[[0,"MANDATORY","SCOMET Cat 6 export authorisation via DDP portal.","DDP export authorisation"],[0,"MANDATORY","End-user certificate from the importing government/end user.","End-user certificate"],[0,"MARKET-SPECIFIC","Arms Act / Arms Rules licence (MHA) for small arms and ammunition.","MHA arms export licence"]],
+mk:[["Friendly governments","G2G or licensed private supply."]],
+steps:["Industrial licence for defence production.","Export authorisation per contract with EUC.","Ship under security escort rules."],risk:["Severe penalties for diversion."],sch:["S1","S2"],chk:"Current DDP SOP for Cat 6 authorisations."},
+{id:"garments",cat:"Textiles & Leather",icon:"👕",name:"Readymade garments",hs:"Ch.61 / Ch.62",ap:"Atchutapuram apparel SEZ (Visakhapatnam), Nellore, Hindupur, Tirupati",pol:"Free",board:"AEPC — RCMC",
+certs:[[0,"STRONGLY RECOMMENDED","Social-compliance audit (BSCI/amfori, WRAP, SA8000, SMETA) — buyers insist.","Social compliance audit"],[0,"MARKET-SPECIFIC","EU REACH restricted substances; textile fibre labelling; Oeko-Tex Standard 100 often asked.","REACH + Oeko-Tex"],[0,"MARKET-SPECIFIC","USA: UFLPA — prove the cotton is not from Xinjiang; CPSIA for children's wear.","UFLPA traceability"],[0,"MARKET-SPECIFIC","Organic claims: GOTS certification.","GOTS"],[24,"MARKET-SPECIFIC","Preferential origin (UK CETA, UAE CEPA, Australia ECTA) for duty savings."]],
+mk:[["USA / EU / UK","Largest markets; UK-India CETA cuts UK duty."],["UAE","CEPA zero duty."]],
+steps:["Factory or job-work unit with audits.","AEPC RCMC; sampling and lab tests.","Inspection (AQL); ship."],risk:["Late delivery penalties; chargebacks."],sch:["S1","S2","S3","S5","S8","M1"],chk:"RoSCTL vs RoDTEP applicability for garments."},
+{id:"handloom",cat:"Textiles & Leather",icon:"🧵",name:"Handloom & silk textiles (sarees, fabrics)",hs:"5007 / 5208 / 6214 / 6304",ap:"Venkatagiri, Mangalagiri, Uppada, Dharmavaram, Chirala, Ponduru — GI-tagged weaves",pol:"Free",board:"HEPC (handloom); ISEPC (silk)",
+certs:[[0,"STRONGLY RECOMMENDED","Handloom Mark / India Handloom Brand — proves hand-woven.","Handloom Mark"],[0,"RECOMMENDED","GI authorised-user registration for GI names (e.g. Uppada Jamdani).","GI authorised user"],[0,"MARKET-SPECIFIC","Silk Mark for pure silk; REACH dye limits for EU.","Silk Mark"]],
+mk:[["USA / UK / Gulf / Singapore","Diaspora and designer buyers."]],
+steps:["Source from weaver cooperatives.","HEPC RCMC; labels and GI.","Ship via courier/air for small lots."],risk:["Colour-fastness complaints."],sch:["S1","S2","M1"],chk:""},
+{id:"leather",cat:"Textiles & Leather",icon:"👟",name:"Leather, footwear & leather goods",hs:"Ch.41 / 42 / 64",ap:"Tada (Tirupati) footwear SEZ, Nellore, Krishnapatnam belt",pol:"Free — reptile skins Prohibited; raw hides and wet blue carry export duty",board:"CLE — RCMC",
+certs:[[0,"MARKET-SPECIFIC","REACH: chromium VI, azo dyes, PFAS limits — lab tests.","REACH lab tests"],[0,"STRONGLY RECOMMENDED","Leather Working Group (LWG) tannery rating — brands demand it.","LWG audit"],[0,"MARKET-SPECIFIC","CITES for exotic leathers. Bovine leather (4101/4104/4107) was removed from EUDR scope by Delegated Reg. (EU) 2026/2102 from 18 Sep 2026 (verify for your code).","CITES"]],
+mk:[["EU / USA","Footwear and bags; brand compliance audits."]],
+steps:["Tannery/factory with LWG.","CLE RCMC; tests.","Ship."],risk:["Chemical test failures."],sch:["S1","S2","S3","S5","M1"],chk:"Raw-hide export duty rates and EUDR Annex I for your leather code."},
+{id:"yarn",cat:"Textiles & Leather",icon:"🧶",name:"Cotton yarn & fabrics",hs:"5205 / 5208–5212",ap:"Guntur, Prakasam, Kurnool spinning mills",pol:"Free",board:"TEXPROCIL — RCMC",
+certs:[[18,"MANDATORY","Yarn test report (count, CSP, evenness)."],[0,"MARKET-SPECIFIC","Organic: GOTS/OCS; recycled: GRS; US UFLPA cotton traceability.","GOTS / UFLPA"],[24,"MARKET-SPECIFIC","Preferential COO for Bangladesh (SAFTA), Vietnam/ASEAN etc."]],
+mk:[["Bangladesh / China / Vietnam","Main yarn buyers."]],
+steps:["Supply contract with mill.","TEXPROCIL RCMC; test reports.","Ship."],risk:["Cotton price swings."],sch:["S1","S2","S3","S5","M1"],chk:""},
+{id:"plastics",cat:"Other Manufactured",icon:"🛍️",name:"Plastic products, woven sacks & FIBC bags",hs:"Ch.39 (3923 / 6305.33)",ap:"Visakhapatnam, Sri City, Vijayawada",pol:"Free — plastic waste/scrap governed by Hazardous Waste Rules",board:"PLEXCONCIL — RCMC",
+certs:[[0,"MARKET-SPECIFIC","UN-certified FIBC/packaging for dangerous goods; ISO 21898 for FIBC.","UN packaging certification"],[0,"MARKET-SPECIFIC","Food-contact compliance (EU Reg 10/2011, US FDA 21 CFR).","Food-contact compliance"],[0,"MARKET-SPECIFIC","EU Single-Use Plastics Directive and EPR rules.","EU SUP / EPR"]],
+mk:[["USA / EU","FIBCs and woven sacks."]],
+steps:["Factory certification.","PLEXCONCIL RCMC; tests.","Ship."],risk:["Anti-dumping on some plastic items."],sch:["S1","S2","S3","S5","M1"],chk:""},
+{id:"gems",cat:"Other Manufactured",icon:"💍",name:"Gems, jewellery & imitation jewellery",hs:"Ch.71 (7113 / 7117 / 7102)",ap:"Machilipatnam (imitation/one-gram gold jewellery), Visakhapatnam, Vijayawada",pol:"Free — rough diamonds need Kimberley Process certificate",board:"GJEPC — RCMC",
+certs:[[0,"MARKET-SPECIFIC","Kimberley Process certificate for rough diamonds.","Kimberley Process certificate"],[0,"MARKET-SPECIFIC","Lab certificates (GIA/IGI) for diamonds; lead/cadmium/nickel limits for imitation jewellery (EU REACH, US CPSIA).","Gem / metal test certificates"],[0,"CONSIDER","Insured, valued shipment via secure logistics; SEEPZ/ gem-jewellery SEZ routes.","Valuation + secure logistics"]],
+mk:[["USA / UAE / Hong Kong","Largest markets; UAE CEPA concessions."]],
+steps:["GJEPC RCMC.","Valuation and lab certificates.","Ship via insured courier."],risk:["Nickel/lead failures in imitation jewellery."],sch:["S1","S2","M1"],chk:"Rules for gold/silver jewellery exports (nominated agencies, value addition)."},
+{id:"handicrafts",cat:"Other Manufactured",icon:"🪆",name:"Handicrafts (Kondapalli & Etikoppaka toys, Kalamkari, brassware, leather puppets)",hs:"4420 / 9503 / 6304 / 8306",ap:"Kondapalli (NTR), Etikoppaka (Anakapalli), Srikalahasti & Machilipatnam Kalamkari, Nirmal (TS), Bobbili veena",pol:"Free — wood from legal sources; sandalwood/ivory items barred",board:"EPCH — RCMC",
+certs:[[0,"MARKET-SPECIFIC","EU Toy Safety (CE, EN 71) and US CPSIA/ASTM F963 for toys — lacquer lead limits.","Toy safety tests"],[0,"MARKET-SPECIFIC","Wood: legal-origin documents; ISPM-15; EUDR for wood products to EU.","Wood legality / EUDR"],[0,"RECOMMENDED","GI authorised-user registration (Kondapalli, Etikoppaka, Kalamkari).","GI authorised user"],[20,"MARKET-SPECIFIC","Fumigation for wooden items."]],
+mk:[["USA / EU / Japan","Gift and décor buyers."]],
+steps:["Source from artisan clusters.","EPCH RCMC; toy tests if toys.","Ship by courier/air or LCL."],risk:["Toy-safety failures; breakage."],sch:["S1","S2","M1"],chk:""},
+{id:"hair",cat:"Other Manufactured",icon:"💇",name:"Human hair, wigs & extensions",hs:"0501 / 6703 / 6704",ap:"Tirumala-Tirupati (TTD e-auctions of temple hair), Srikalahasti, Dwaraka Tirumala",pol:"Free for processed hair, wigs, extensions — unworked human hair (0501) Prohibited unless FOB is USD 65/kg or more",board:"PLEXCONCIL — RCMC (human hair and products)",
+certs:[[0,"MANDATORY","Check FOB per kg for 0501 — below USD 65/kg it cannot be shipped.","FOB value check"],[0,"MARKET-SPECIFIC","Fumigation/sanitation certificate demanded by some importers; China/Myanmar transit scrutiny.","Sanitation / fumigation certificate"]],
+mk:[["USA / Nigeria / Europe","Remy hair extensions and wigs."],["China","Processing hub — watch under-invoicing probes."]],
+steps:["Buy at TTD e-auctions.","Process/sort; value-add to beat the USD 65/kg floor.","PLEXCONCIL RCMC; ship."],risk:["DRI probes on under-invoiced hair exports."],sch:["S1","S2","M1"],chk:""},
+{id:"paper",cat:"Other Manufactured",icon:"📄",name:"Paper, paperboard & printed books",hs:"Ch.48 / Ch.49",ap:"Rajahmundry (paper mill), Visakhapatnam",pol:"Free — pulp and waste paper Prohibited",board:"CAPEXIL — RCMC",
+certs:[[0,"MARKET-SPECIFIC","EU Deforestation Regulation for paper/board (Ch.48): due-diligence statement and geolocation of wood origin (applies 30 Dec 2026 large / 30 Jun 2027 small); printed books (Ch.49) are no longer in scope.","EUDR due diligence"],[0,"CONSIDER","FSC/PEFC chain-of-custody.","FSC / PEFC"]],
+mk:[["Gulf / Africa / SAARC","Kraft paper, writing paper."]],
+steps:["Mill supply contract.","CAPEXIL RCMC; EUDR data for EU.","Ship."],risk:["EUDR non-compliance blocks EU sales."],sch:["S1","S2"],chk:""},
+{id:"tyres",cat:"Other Manufactured",icon:"🛞",name:"Tyres & rubber products",hs:"4011 / 4016",ap:"Atchutapuram (Visakhapatnam) off-highway tyre plant; Sri City",pol:"Free",board:"CAPEXIL (tyres, rubber products); Rubber Board (natural rubber)",
+certs:[[0,"MARKET-SPECIFIC","Tyre certification: E-mark (UNECE R30/R54/R117), US DOT, Brazil INMETRO, Gulf GSO, BIS not needed for export.","Tyre type approval"],[0,"MARKET-SPECIFIC","EUDR: new tyres (4011) appear to stay in scope for the EU; rubber articles 4016 were removed in 2026 — verify for your code.","EUDR scope check"]],
+mk:[["EU / USA","OTR and agri tyres."]],
+steps:["Approvals per market.","RCMC; ship."],risk:["Anti-dumping on tyres in some markets."],sch:["S1","S2","S3","S5"],chk:""}
 ];
-var pState={cat:"All",q:"",open:null,base:false};
+// ===== EXPORT POLICY LISTS (ITC(HS) 2017 Schedule 2) + HS CHAPTER GUIDE =====
+var POL_CHECKED="8 Nov 2026 (DGFT ITC(HS) Schedule 2 page, updated 6 Nov 2026)";
+// [ITC(HS) codes, item, R=Restricted (DGFT licence) | P=Prohibited | STE=State Trading Enterprise only, conditions / exceptions]
+var POLICY_LIST=[
+["0101.21.00, 0101.29.10, 0101.29.90, 0101.90.90","Horses (pure-bred breeding, polo, other)","R","Ch.1 Policy Condition 2."],
+["0102.21.10 – 0102.90.90 (8 lines)","Live cattle and buffalo (bulls, cows, calves)","R","Export licence from DGFT."],
+["0106.13.00","Camels","R","Export licence from DGFT."],
+["0106.31, 0106.32, 0106.33, 0106.39","Live birds — birds of prey, parrots/parakeets/macaws/cockatoos, ostriches/emus, other birds","P","Ch.1 Policy Condition 3."],
+["0511.10.00, 0511.91.90, 0511.99.91","Bovine semen, frozen non-bovine semen, bovine embryos; germplasm and reproductive organs of cattle and buffalo","R","Export licence from DGFT."],
+["0201.10/.20/.30, 0202.10/.20/.30","Beef — meat of cow, oxen, calf (fresh, chilled, frozen)","P","Boneless buffalo meat is Free: State veterinary certificate that animals were not for breeding/milch, quality-control conditions, export only from an APEDA-registered plant."],
+["0206.10, 0206.21, 0206.22, 0206.29","Offal of cows, oxen and calves","P","Buffalo offal (except gonads/reproductive organs) is Free on the same conditions as buffalo meat."],
+["0210.20.00","Bovine meat salted, dried or smoked","P",""],
+["0302.92, 0303.92, 0305.71, 1604.18","Shark fins (fresh, frozen, dried, prepared)","P",""],
+["0501.00.10, 0501.00.20","Human hair, unworked, and waste","P","Free if FOB value is USD 65 per kg or more."],
+["0505.90.10","Peacock tail and wing feathers","P",""],
+["0506.10.41","Bones and horn cores of wild animals","P",""],
+["0507.90.40","Antlers","P",""],
+["0508.00.50","Sea shells of species in the Wild Life (Protection) Act schedules, incl. polished shells and handicrafts","P",""],
+["0602.20.10","Cashew seeds and plants","R",""],
+["1001.19.00, 1001.91.00, 1001.99.10, 1001.99.20","Wheat (durum, seed, other) and meslin","P","Seed-quality meslin Free with seed licence and treated-seed declaration."],
+["1006.10.10, 1006.10.90","Paddy (rice in husk) — seed quality and other","R","REA conditions incl. seed-dealer licence (Seeds Control Order 1983), declaration that seed is chemically treated and unfit for food, and labelled packets."],
+["1209.91.30","Onion seed","R",""],
+["1211.90.12, 1211.90.14","Nux vomica seeds; neem seed","R",""],
+["1211.90.51","Sandalwood chips and dust (sandalwood in any form)","P","Finished handicrafts and machine-finished products Free; oil, de-oiled spent dust and small chips/powder from manufacturing waste Restricted (REA)."],
+["1211.90.54","Agarwood (chips, powder)","R","Cultivated origin only; 1,51,080 kg a year (FY 2024-25 to 2026-27); Forest Dept certificate of origin after physical inspection from a registered plantation, certified photo, CITES permit."],
+["1212.29.10, 1212.29.90","Seaweeds and other algae","R","Brown seaweeds and agarophytes (except G. edulis) of Tamil Nadu coast origin in processed form are Free within notified ceilings."],
+["1213.00.00","Cereal straw and husks incl. wheat and rice straw (fodder)","R","Agri-residue biomass briquettes/pellets are Free."],
+["1214.10.00, 1214.90.00","Lucerne meal/pellets and other fodder","R",""],
+["1401.10.00","Bamboo","P","Bamboo products from legal sources Free with certificate of origin from State Forest/Agriculture Dept; bamboo charcoal, pulp and unprocessed shoots stay prohibited."],
+["1501–1506 (lard, pig fat, tallow, lard stearin/oil, wool grease, neat's-foot oil, other animal fats)","Animal fats","P","Ch.15 Condition 1. Buffalo tallow Free from APEDA integrated plants with rendering, after pre-shipment biochemical test by an APEDA-approved lab; lanolin Free (EU: CAPEXIL shipment clearance + joint health certificate)."],
+["1514.91.20, 1514.99.20","Mustard oil","R","Branded consumer packs up to 5 kg permitted with minimum export price USD 900/MT."],
+["1701.14.90, 1701.99.90","Sugar (raw, white, refined, organic)","R","Directorate of Sugar (DFPD) permission. Free under EU CXL quota (CoO from Addl. DGFT Mumbai), US TRQ and UK TRQ (APEDA). Pharma-grade sugar by REA up to 25,000 MT per FY. The prohibition that ran to 30 Sep 2026 has lapsed."],
+["2207.20.00","Denatured ethyl alcohol","R","REA for non-fuel use only; bio-fuel made in SEZ/EOU from imported feedstock is Free."],
+["2302.10.10, 2302.30.00","Maize bran; wheat bran","R",""],
+["2305.00.10, 2305.00.20, 2305.00.90","Groundnut expeller cake / de-oiled groundnut cake with more than 1% oil","R",""],
+["2308.00.00","Vegetable materials used in animal feeding","R",""],
+["2505.10.11–.20, 2505.90.00","Silica sands, quartz sands and other natural sands","R",""],
+["2508.50.31/.32/.39","Sillimanite","STE","Indian Rare Earths Ltd (IREL) only."],
+["2511.10.10/.20/.90","Natural barium sulphate (barytes)","R","Grade A (sp. gravity above 4.2) and Grade B (4.10–4.20) Restricted; lower grades (C, D, waste) Free — confirm the exact specific-gravity note."],
+["2513.20.30","Natural garnet","STE","IREL only."],
+["2530.90.99","Other mineral substances n.e.s.","R",""],
+["2601.11.11 – 2601.12.90","Iron ore lumps, fines, concentrates, pellets","STE","Ch.26 Policy Condition 1: ore up to 64% Fe Free; above 64% Fe only through MMTC (Goa and Redi origin excepted); KIOCL pellets made Free in 2014 — verify current text."],
+["2602.00.10","Manganese ore, 46% Mn and above","R",""],
+["2602.00.20 – 2602.00.90","Manganese ore below 46% Mn, ferruginous ore, sinters","STE","MOIL only."],
+["2610.00.10 – 2610.00.90","Chrome ore, all grades","R",""],
+["2612.10, 2612.20","Uranium and thorium ores","STE","IREL only; atomic minerals."],
+["2614.00.10/.20/.90, 2614.00.31/.39","Ilmenite (unprocessed, upgraded) and rutile","STE","IREL only — AP has deposits (Srikakulam, Bhimunipatnam) but no production since private beach-sand mining was stopped in 2019."],
+["2615.10","Zirconium ores (zircon)","STE","IREL only."],
+["2709.00.10, 2709.00.90","Crude petroleum","STE","Indian Oil Corporation (IOCL) only."],
+["2710.20.10/.20/.90","Diesel blended with biodiesel (B6–B20)","R","REA for non-fuel use only."],
+["2903.xx (54 lines)","Ozone-depleting and HFC halogenated chemicals — carbon tetrachloride, methyl chloroform, CFCs, HCFCs, halons, HFCs, HFOs, methyl bromide, HBCDDs","R","Ch.29 Policy Conditions 1 & 2 — ODS Rules; licence via MoEFCC Ozone Cell / DGFT."],
+["3301.29.37","Sandalwood oil","R","REA; PCCF certificate of origin and stock position."],
+["3301.30.10","Agar oil","R","7,050 kg a year (FY 2024-25 to 2026-27); certificate of origin and CITES permit."],
+["3805.10.10","Wood turpentine","R",""],
+["3808.91.22","Methyl bromide","R",""],
+["3826.00.00","Biodiesel","R","REA for non-fuel use only."],
+["3827.xx (19 lines)","Mixtures containing CFCs, HCFCs, HFCs, halons, methyl bromide etc.","R","Ch.38 Policy Conditions 1 & 2."],
+["4103.20, 4106.40, 4113.30","Reptile skins and reptile leather","P",""],
+["4301.10, 4301.60, 4302.19.40","Raw furskins of mink and fox; tiger-cat skins","P",""],
+["4303.10.10/.20, 4303.90.10/.20","Apparel and articles of fur of Wild Life Act / CITES animals","P",""],
+["4401.11, 4401.12, 4401.39","Fuel wood, wood chips, sawdust and wood waste","P","Wood in log, timber, stump, root, bark, chip, powder, flake, dust or charcoal form is not allowed, except sawn timber made only from imported logs."],
+["4401.31.00, 4401.32.00","Wood pellets; wood briquettes","R","REA."],
+["4402.20.90","Charcoal (other than coconut-shell charcoal)","P","Allowed only to Bhutan. Coconut-shell charcoal 4402.20.10 is not listed — Free."],
+["4403.99.18","Red sanders wood","R","Policy Condition 3 — cultivated origin, PCCF certificate, CITES, State quota."],
+["4403.99.22","Sandalwood logs","P","Policy Condition 5."],
+["4407.11, 4407.19.10/.90, 4407.29, 4407.96, 4407.99.20","Sawn wood (coniferous, tropical, birch, willow)","P","Certain exports permitted under Policy Condition 4."],
+["4407.99.90","Other sawn wood","R","Policy Condition 4."],
+["4420.90.90","Other wooden articles","R","Policy Condition 6."],
+["4701 – 4706 (all)","Wood pulp of every kind incl. bamboo and recovered-paper pulp","P",""],
+["4707.10/.20/.30/.90","Waste paper and paperboard","P",""],
+["5001.00.00","Silkworm cocoons; pure races and silkworm seed","R","REA."],
+["8543.40.00","Electronic cigarettes, heat-not-burn devices, e-hookah and their parts (pods, cartridges, atomisers)","P",""],
+["9601.10.00","Worked ivory and articles of ivory","P",""]
+];
+// Cross-cutting controls that apply on top of Schedule 2 (even when the item is "Free")
+var CONTROLS=[
+["SCOMET (Appendix 3, Schedule 2)","Dual-use and military items: Cat 0 nuclear materials (DAE), 1 toxic chemical agents / CWC chemicals, 2 micro-organisms and toxins, 3 materials, materials-processing equipment and technologies, 4 nuclear-related equipment (DAE), 5 aerospace systems incl. UAVs, 6 munitions list (Dept. of Defence Production), 7 reserved, 8 special materials, electronics, computers, telecom, information security, sensors, lasers, navigation, marine, propulsion. Needs a SCOMET authorisation even if the ITC(HS) line is Free — check the Appendix 3 list (verify current categories)."],
+["NDPS — narcotics, psychotropics and precursors","Export of narcotic drugs and psychotropic substances needs an export authorisation from the Narcotics Commissioner; controlled precursors (e.g. acetic anhydride, ephedrine, pseudoephedrine, potassium permanganate) need NCB registration and a no-objection / pre-export notification (verify the current list)."],
+["Wildlife — CITES and Wild Life (Protection) Act","Any CITES-listed plant or animal, or its parts, needs a CITES export permit from the Wildlife Crime Control Bureau / CITES management authority; Schedule animals and their products are banned."],
+["Biological Diversity Act 2002","Commercial use of Indian biological resources needs National / State Biodiversity Board approval or intimation; foreign-owned companies need NBA approval (verify after the 2023 amendment)."],
+["Ozone Depleting Substances Rules","ODS and HFCs are licensed through the MoEFCC Ozone Cell; India follows Montreal Protocol phase-down schedules."],
+["Hazardous and Other Wastes Rules / Basel Convention","Export of hazardous waste needs MoEFCC permission and the importing country's prior informed consent."],
+["Rotterdam Convention (PIC)","Banned or severely restricted chemicals/pesticides listed in Annex III need export notification and the importer's consent (verify procedure with CIB&RC / MoEFCC)."],
+["Antiquities and Art Treasures Act 1972","Antiquities (100+ years old) and declared art treasures cannot be exported except by Government or with ASI permission; get an ASI 'non-antiquity' certificate for old-looking items."],
+["Arms Act / Arms Rules","Firearms and ammunition for civilian use need MHA export licence plus end-user certificate; military items via SCOMET Cat 6 (DDP)."],
+["Explosives Act — PESO","Explosives, fireworks and safety matches need PESO licences for manufacture, storage and transport to port; ship as IMDG Class 1 / 4.1 dangerous goods."],
+["Drugs & Cosmetics Act — CDSCO","Drugs and medical devices must be made under a CDSCO / State drug licence; unapproved drugs made only for export need an export-only licence / NOC (verify)."],
+["Atomic Energy — AERB / DAE","Radioactive material and atomic minerals need DAE / AERB clearance; beach-sand minerals are exported only by IREL."],
+["Dangerous goods transport","Any hazardous cargo needs an MSDS/SDS, UN number, IMDG (sea) or IATA DGR (air) declaration, UN-approved packaging and a DG-accepting carrier."],
+["Sanctions","UN Security Council sanctions are applied through the Foreign Trade Policy and DGFT notifications (e.g. DPRK); check the buyer and destination against sanctions lists before contracting (verify current list)."],
+["EU CBAM","Iron & steel, aluminium, cement, fertilisers, hydrogen and electricity to the EU: embedded-emissions data required; definitive period from 1 Jan 2026 (importer liability accrues; CBAM certificates on sale from 1 Feb 2027, surrendered by 30 Sep 2027; 50 t/yr de-minimis per importer) — your EU importer needs your plant's verified emissions."],
+["EU Deforestation Regulation (EUDR)","Wood (incl. furniture, pulp and paper), natural rubber and some rubber goods, cocoa, coffee, soy, palm oil and cattle (not leather) to the EU need plot geolocation and a due-diligence statement — applies from 30 Dec 2026 (large firms) / 30 Jun 2027 (small firms). 2025–26 amendments removed printed products (Ch.49), bovine leather (4101/4104/4107) and some rubber goods (4010, 4016) — check Annex I for your code."]
+];
+// [chapter, description, RCMC body (EPC / commodity board per FTP Appendix 2T), key certificates & rules]
+var HS_CH=[
+["01","Live animals","DGFT licence; RCMC via FIEO (verify)","Horses, cattle, buffalo, camels Restricted; live birds Prohibited. AQCS veterinary health certificate after quarantine; importing-country import permit."],
+["02","Meat and edible offal","APEDA","Beef Prohibited; buffalo meat Free from APEDA-registered integrated plants only. Veterinary health certificate, halal certificate, residue monitoring; destination plant approval (e.g. Gulf, Vietnam, Malaysia)."],
+["03","Fish, crustaceans, molluscs","MPEDA","Shark fins Prohibited. EIC health certificate for EU and other notified markets; EU-approved establishment list; US: TED/MMPA rules, antibiotic testing; CITES for listed species."],
+["04","Dairy, eggs, honey, edible animal products","APEDA","EIC certificate for dairy and honey to EU (approved establishments only); honey NMR / antibiotic tests; India not on EU list for many dairy products (verify)."],
+["05","Other animal products (hair, bones, feathers, casings)","CAPEXIL (animal by-products); PLEXCONCIL (human hair)","Unworked human hair Prohibited below USD 65/kg FOB; peacock feathers, wild-animal bones, antlers, scheduled sea shells Prohibited. Animal by-products to EU need health certificates."],
+["06","Live trees, plants, bulbs, cut flowers","APEDA (floriculture)","Cashew seeds/plants Restricted. Phytosanitary certificate; soil-free media; importing-country import permit (PRA)."],
+["07","Vegetables","APEDA","Phytosanitary certificate; EU Reg 2019/1793 increased checks on some vegetables; onion policy changes often — check the current DGFT notification."],
+["08","Fruits and nuts","APEDA (fruits, nuts); CEPCI (cashew kernels, CNSL)","Phyto; market-access protocols (USA/Japan/Australia need irradiation or VHT/hot-water treatment for mango etc.); pest-free packhouses."],
+["09","Coffee, tea, spices","Coffee Board / Tea Board / Spices Board","Spices Board CRES and quality certificate for notified markets; EU ethylene-oxide/pesticide checks; aflatoxin and Sudan dye tests."],
+["10","Cereals","APEDA","Wheat Prohibited; paddy Restricted; non-basmati rice contracts registered with APEDA (RCAC); check current rice policy before contracting."],
+["11","Milling products (flour, malt, starch)","APEDA","Wheat flour/atta export is subject to conditions — check Schedule 2 'Free subject to' notes (verify)."],
+["12","Oilseeds, seeds, medicinal plants, seaweed, fodder","IOPEPC (oilseeds); APEDA (groundnut, herbal plants); SHEFEXIL (herbs)","Onion seed, neem seed, nux vomica, agarwood, seaweeds, fodder Restricted; sandalwood Prohibited. Seed exports need seed affidavit; phyto; NBA for wild bio-resources."],
+["13","Lac, gums, resins, plant extracts","SHEFEXIL","Guar gum, shellac, plant extracts; CoA; EU food-additive specs for guar gum (PCP/dioxin tests)."],
+["14","Vegetable plaiting materials","SHEFEXIL / EPCH","Bamboo Prohibited except bamboo products from legal sources with CoO."],
+["15","Animal and vegetable fats and oils","IOPEPC (veg oils); CHEMEXCIL (castor oil)","Animal fats Prohibited (buffalo tallow, lanolin exceptions); mustard oil Restricted (packs up to 5 kg at MEP USD 900/MT). CoA; FSSAI for edible oils."],
+["16","Meat and fish preparations","APEDA (meat); MPEDA (fish)","Shark-fin preparations Prohibited; EIC health certificate for fish products to EU."],
+["17","Sugars and confectionery","APEDA","Sugar Restricted (EU/UK/US quotas Free); jaggery Free; FSSAI."],
+["18","Cocoa and preparations","APEDA","EU EUDR for cocoa; cadmium limits."],
+["19","Cereal preparations, bakery","APEDA","FSSAI; allergen labelling; destination labelling rules."],
+["20","Vegetable and fruit preparations","APEDA","FSSAI; EU contaminant limits; US FDA food-facility registration and FSMA for all food to USA."],
+["21","Miscellaneous edible preparations","APEDA; SHEFEXIL / Pharmexcil (nutraceuticals)","FSSAI; destination novel-food / supplement rules."],
+["22","Beverages, spirits, vinegar","APEDA","Denatured ethanol Restricted (non-fuel REA). Liquor exports under State excise bond; US TTB COLA via importer."],
+["23","Food-industry residues, animal feed","SHEFEXIL (oil cakes); IOPEPC","Groundnut cake with more than 1% oil, maize/wheat bran, vegetable feed materials Restricted. Aflatoxin tests; EU feed hygiene registration."],
+["24","Tobacco and manufactured substitutes","Tobacco Board (Guntur)","Tobacco Board registration; pesticide residue tests; destination plain-pack / health-warning rules."],
+["25","Salt, sulphur, earths, stone, lime, cement","CAPEXIL (minerals, cement, granite)","Silica/quartz sands, barytes A/B, other minerals 2530.90.99 Restricted; sillimanite, garnet IREL only. State mineral transit permit; CBAM for cement to EU."],
+["26","Ores, slag, ash","CAPEXIL (bulk minerals and ores)","Iron ore above 64% Fe via MMTC only (Ch.26 Cond 1); manganese below 46% MOIL only; Mn 46%+ and chrome ore Restricted; uranium, thorium, ilmenite, rutile, zircon IREL only. Check CBIC export duty on ores."],
+["27","Mineral fuels, oils, coal","FIEO / CHEMEXCIL (coal-tar chemicals)","Crude oil IOCL only; biodiesel blends Restricted. PESO for petroleum storage; DG rules (IMDG Class 3)."],
+["28","Inorganic chemicals, rare earths, radioactive","CHEMEXCIL","SCOMET Cat 0/1/3 for some; NDPS precursors (e.g. potassium permanganate); AERB for radioactive; MSDS, UN number, IMDG; REACH (EU), TSCA (US)."],
+["29","Organic chemicals","CHEMEXCIL; Pharmexcil (bulk drugs/intermediates)","ODS and HFCs (2903) Restricted; NDPS precursors (acetic anhydride, ephedrine etc.) need NCB clearance; CWC Schedule chemicals via SCOMET Cat 1 / NACWC declarations; REACH / TSCA / K-REACH."],
+["30","Pharmaceutical products","Pharmexcil; AYUSHEXCIL (AYUSH)","CDSCO / State drug manufacturing licence; COPP (WHO-GMP); destination product registration (dossier); US FDA, EU GMP; NDPS export authorisation for narcotics."],
+["31","Fertilisers","CAPEXIL (superphosphates, urea etc.)","Fertiliser Control Order specs; CBAM for nitrogen fertilisers to EU; some fertilisers may be under export conditions (verify)."],
+["32","Tanning/dyeing extracts, dyes, pigments, paints, inks","CHEMEXCIL (dyes); CAPEXIL (paints, cutch)","REACH Annex XVII azo-amine and heavy-metal limits; MSDS; DG rules for solvent paints."],
+["33","Essential oils, perfumery, cosmetics","CHEMEXCIL","Sandalwood oil and agar oil Restricted. EU: CPNP notification, Responsible Person, safety report; US: MoCRA facility registration and product listing; halal for OIC markets."],
+["34","Soaps, detergents, waxes, candles","CHEMEXCIL (toiletries) — verify","MSDS; EU detergent regulation labelling; biodegradability."],
+["35","Albuminoids, starches, glues, enzymes","CAPEXIL (ossein, glue, gelatine)","Gelatine/collagen of animal origin need health certificates (EU, China)."],
+["36","Explosives, fireworks, matches","CAPEXIL","PESO licences; IMDG Class 1 / 4.1; military explosives under SCOMET; destination import licence."],
+["37","Photographic and cinematographic goods","PLEXCONCIL (X-ray film)","Standard documents."],
+["38","Miscellaneous chemical products (agrochemicals etc.)","CHEMEXCIL","Methyl bromide, ODS mixtures (3827), biodiesel Restricted. Pesticides: CIB&RC registration / export-only permission; importing-country registration; Rotterdam PIC for Annex III actives; SDS/IMDG."],
+["39","Plastics and articles","PLEXCONCIL","Plastic waste/scrap: Hazardous Waste Rules and Basel plastic-waste amendments; EU food-contact (Reg 10/2011); UN-certified packaging for DG."],
+["40","Rubber and articles","Rubber Board (natural rubber); CAPEXIL (tyres, rubber products)","EUDR for natural rubber and some rubber products to EU (4010 belts and 4016 articles removed in 2026 — check your code); tyre markets need ECE/DOT/INMETRO/GSO certification."],
+["41","Raw hides, skins, leather","CLE","Reptile skins/leather Prohibited; export duty on raw hides and skins (about 40%; raw buffalo hides 30%; wet blue 20%; crust leather nil since Feb 2025 — verify); CITES for exotic."],
+["42","Leather articles, handbags, travel goods","CLE; PLEXCONCIL (plastic luggage)","REACH chromium VI and azo limits; EU product labelling."],
+["43","Furskins and artificial fur","CLE","Furs of wild/CITES animals, mink and fox Prohibited."],
+["44","Wood and articles, charcoal","CAPEXIL (plywood, coconut-shell charcoal); EPCH (woodware)","Logs, timber, chips, charcoal Prohibited (coconut-shell charcoal Free); red sanders and some sawn wood Restricted; sandalwood Prohibited. Legal-origin certificates; ISPM-15 for wood packaging; EUDR."],
+["45","Cork","FIEO","Standard documents."],
+["46","Basketware, wickerwork","EPCH","Fumigation; bamboo, rattan and wicker are outside EUDR."],
+["47","Wood pulp, waste paper","—","All pulp and waste paper Prohibited."],
+["48","Paper and paperboard","CAPEXIL","EUDR to EU; FSC/PEFC asked by buyers."],
+["49","Books, printed matter","CAPEXIL","Printed products (Ch.49) were removed from EUDR scope by Reg. (EU) 2025/2650; copyright clearances."],
+["50","Silk","ISEPC; Central Silk Board","Silkworm cocoons and seed Restricted."],
+["51","Wool and animal hair","Wool & Woollens EPC / Wool Industry EPC","Standard documents; Mark origin."],
+["52","Cotton","TEXPROCIL","Raw cotton, yarn, fabrics; US UFLPA traceability (no Xinjiang cotton); organic needs NPOP/GOTS."],
+["53","Jute, coir, other vegetable fibres","JPDEPC (jute); Coir Board (coir)","Standard documents; fumigation for coir pith."],
+["54","Man-made filaments","SRTEPC","REACH; Oeko-Tex asked by buyers."],
+["55","Man-made staple fibres","SRTEPC","As Ch.54."],
+["56","Wadding, felt, ropes, nets","PLEXCONCIL (fishnets, ropes); SRTEPC","Standard documents."],
+["57","Carpets","Carpet EPC","US CBP forced/child-labour scrutiny — keep supply-chain records."],
+["58","Special woven fabrics, lace, embroidery","EPCH (hand embroidery); SRTEPC / PDEXCIL","Handloom/handicraft marks where claimed."],
+["59","Coated and technical textiles","SRTEPC / TEXPROCIL (verify council)","Performance-standard test reports per buyer."],
+["60","Knitted fabrics","SRTEPC / TEXPROCIL / PDEXCIL","Standard documents."],
+["61","Knitted apparel","AEPC","REACH, EU textile labelling; buyer social audits (BSCI/WRAP/SA8000); US CPSIA for children's wear."],
+["62","Woven apparel","AEPC; HEPC (handloom)","As Ch.61; organic needs GOTS."],
+["63","Made-ups, home textiles, worn clothing","TEXPROCIL; HEPC","Standard documents; fumigation for worn clothing where demanded."],
+["64","Footwear","CLE","REACH (CrVI, azo); EU footwear labelling; buyer compliance audits."],
+["65","Headgear","AEPC / FIEO","Standard documents."],
+["66","Umbrellas, walking sticks","FIEO","Standard documents."],
+["67","Feathers, artificial flowers, human-hair articles (wigs)","PLEXCONCIL (human hair products)","Unworked human hair Prohibited below USD 65/kg; wigs/extensions Free."],
+["68","Articles of stone, cement, asbestos","CAPEXIL (granite, natural stone); EPCH (stone artware)","EU Construction Products Regulation CE marking for stone flooring/cladding (EN 1469 etc. — verify); asbestos products banned in many markets."],
+["69","Ceramic products","CAPEXIL","Lead/cadmium release limits for food-contact ware (US FDA, EU); CE for ceramic tiles under EU CPR."],
+["70","Glass and glassware","CAPEXIL","Food-contact limits; safety-glass type approval for automotive."],
+["71","Pearls, gems, jewellery, precious metals","GJEPC","Kimberley Process certificate for rough diamonds; BIS hallmarking not needed for export; precious-metal exports may carry conditions (verify)."],
+["72","Iron and steel","EEPC","EU CBAM; EU steel safeguard expired 30 Jun 2026 — replaced from 1 Jul 2026 by Reg. (EU) 2026/1384 (country tariff quotas, 50% duty above quota); US Section 232 tariffs; mill test certificate (EN 10204 3.1); check CBIC export duty."],
+["73","Articles of iron or steel","EEPC","CBAM covers many articles (e.g. fasteners); CE (EN 1090) for structural steel to EU; US Section 232 on derivatives — since the April 2026 revision charged on full value (50% or 25% by annex — verify)."],
+["74","Copper","EEPC","Mill test certificate; copper scrap needs no licence (verify)."],
+["75","Nickel","EEPC","Standard documents."],
+["76","Aluminium","EEPC","EU CBAM; US Section 232."],
+["77","(Reserved — not used)","—","—"],
+["78","Lead","EEPC","Hazardous-waste rules for lead scrap/batteries."],
+["79","Zinc","EEPC","Standard documents."],
+["80","Tin","EEPC","Conflict-minerals (3TG) due-diligence asked by US/EU buyers."],
+["81","Other base metals (tungsten, beryllium, zirconium, hafnium etc.)","EEPC","Some fall under SCOMET Cat 0/3; 3TG due diligence for tungsten/tantalum."],
+["82","Tools, cutlery","EEPC","Food-contact rules for cutlery."],
+["83","Miscellaneous base-metal articles","EEPC (builders' hardware); EPCH (art metalware)","Standard documents."],
+["84","Machinery, boilers, engines, pumps, computers","EEPC; ESC (computer hardware)","EU CE (Machinery Directive; Machinery Regulation 2023/1230 from 20 Jan 2027); UL/CSA for North America; SCOMET Cat 3/8 for some machine tools and computers."],
+["85","Electrical machinery, electronics, phones","ESC; TEPC (telecom); MEDEPC (mobiles); EEPC (electrical appliances)","E-cigarettes Prohibited. CE, RoHS, WEEE, EU battery rules; FCC (US); lithium batteries UN38.3 + IATA/IMDG; SCOMET Cat 8 incl. encryption items."],
+["86","Railway rolling stock and parts","EEPC","Buyer-specific approvals."],
+["87","Vehicles, auto parts, tractors, two-wheelers","EEPC","Destination type approval (EU WVTA / UNECE regs, GCC, ASEAN); E-marked parts; IATF 16949; armoured vehicles under SCOMET Cat 6."],
+["88","Aircraft, drones, spacecraft and parts","EEPC","SCOMET Cat 5 (aerospace, UAVs); DGCA/airworthiness documents for parts."],
+["89","Ships, boats","EEPC","Class-society certificates; sale of Indian-flag vessels needs DG Shipping clearance (verify)."],
+["90","Optical, medical, measuring instruments","EPCMD (medical devices); EEPC (other instruments); ESC; PLEXCONCIL (IOLs, frames)","Medical devices: CDSCO licence, ISO 13485, US FDA registration/510(k), EU MDR CE; SCOMET Cat 8 for some sensors/lasers."],
+["91","Clocks and watches","FIEO / ESC","Standard documents."],
+["92","Musical instruments","EPCH / FIEO","CITES for rosewood or other listed timbers/ivory parts."],
+["93","Arms and ammunition","DGFT / Dept. of Defence Production","SCOMET Cat 6 authorisation; Arms Act licence (MHA) for civilian firearms; end-user certificate."],
+["94","Furniture, bedding, lighting, prefab buildings","EPCH (handicraft furniture) / EEPC (lighting) — verify","EUDR for wooden furniture; ISPM-15 crates; flammability and lighting safety (CE/UL)."],
+["95","Toys, games, sports goods","PLEXCONCIL (toys, dolls); SGEPC (sports goods)","EU Toy Safety (CE, EN 71); US CPSIA/ASTM F963 with children's product certificate."],
+["96","Miscellaneous manufactured articles","PLEXCONCIL (pens, plastic bangles); EPCH (agarbattis)","Worked ivory Prohibited."],
+["97","Works of art, antiques, collectors' pieces","EPCH / FIEO","Antiquities (100+ years) and art treasures need ASI permission — generally banned; ASI non-antiquity certificate for old-looking pieces."]
+];
+function hsToggle(){pState.hs=!pState.hs;renderProducts();}
+function plToggle(){pState.pl=!pState.pl;renderProducts();}
+function hsSearch(v){pState.hq=v;renderProducts();var i=document.getElementById("hsSrch");if(i){i.focus();i.setSelectionRange(v.length,v.length);}}
+function plSearch(v){pState.plq=v;renderProducts();var i=document.getElementById("plSrch");if(i){i.focus();i.setSelectionRange(v.length,v.length);}}
+function plTag(t){var c=t==="P"?"#dc2626":t==="STE"?"#2563eb":"#d97706",l=t==="P"?"PROHIBITED":t==="STE"?"STE ONLY":"RESTRICTED";return '<span class="bdg" style="background:'+c+'14;color:'+c+';border:1px solid '+c+'44;flex-shrink:0">'+l+'</span>';}
+function renderPolicySections(){
+  var box='background:white;border:1px solid #e8e8e4;border-radius:12px;margin-bottom:14px';
+  var hdr=function(fn,title,open){return '<div onclick="'+fn+'()" style="padding:12px 14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center"><div style="font-size:13px;font-weight:800;color:#1a1a1a">'+title+'</div><span style="color:#7c3aed;font-weight:700">'+(open?'▲':'▼')+'</span></div>';};
+  var inp='width:100%;box-sizing:border-box;padding:9px 10px;border:1px solid #e8e8e4;border-radius:10px;font-family:Inter,sans-serif;font-size:13px;margin-bottom:8px';
+  var h='<div style="'+box+'">'+hdr("hsToggle","📚 Every HS chapter 01–97 — who registers you & key rules",pState.hs);
+  if(pState.hs){
+    var q=pState.hq.toLowerCase();
+    h+='<div style="padding:0 14px 12px"><div style="font-size:12px;color:#555;line-height:1.5;margin-bottom:8px">Any product falls in one of these 97 chapters (first 2 digits of its HS code). Your RCMC comes from the council shown (FTP Appendix 2T; if none fits, FIEO). Not covered by a product card below? Start here.</div>';
+    h+='<input id="hsSrch" value="'+pState.hq.replace(/"/g,'&quot;')+'" oninput="hsSearch(this.value)" placeholder="🔍 Search chapter no., product word or council…" style="'+inp+'">';
+    var n=0;
+    HS_CH.forEach(function(c){if(q&&(c.join(" ")).toLowerCase().indexOf(q)<0)return;n++;
+      h+='<div style="border:1px solid #eee;border-left:4px solid #2563eb;border-radius:0 10px 10px 0;padding:8px 12px;margin-bottom:6px"><div style="font-size:12px;font-weight:700;color:#1a1a1a">Ch '+c[0]+' · '+c[1]+'</div><div style="font-size:11px;color:#2563eb;font-weight:600;margin:2px 0">Register with: '+c[2]+'</div><div style="font-size:12px;color:#555;line-height:1.5">'+c[3]+'</div></div>';});
+    if(!n)h+='<div style="font-size:12px;color:#888;padding:8px">No chapter matches.</div>';
+    h+='</div>';
+  }
+  h+='</div><div style="'+box+'">'+hdr("plToggle","🚫 Restricted / Prohibited / STE items — everything else is Free",pState.pl);
+  if(pState.pl){
+    var q2=pState.plq.toLowerCase();
+    h+='<div style="padding:0 14px 12px"><div style="font-size:12px;color:#555;line-height:1.5;margin-bottom:8px">ITC(HS) Schedule 2 export policy as on '+POL_CHECKED+'. An item NOT in this list is <b style="color:#16a34a">Free</b> to export with IEC — but some Free items carry "subject to" conditions in Schedule 2, and the cross-cutting controls at the bottom (SCOMET, NDPS, CITES…) apply on top. <b>Restricted</b> = DGFT export authorisation needed; <b>Prohibited</b> = banned; <b>STE</b> = only the named state agency may export.</div>';
+    h+='<input id="plSrch" value="'+pState.plq.replace(/"/g,'&quot;')+'" oninput="plSearch(this.value)" placeholder="🔍 Search HS code or item (e.g. 2614, sand, oil)…" style="'+inp+'">';
+    h+='<div class="cats">';["All","R","P","STE"].forEach(function(t){var cnt=t==="All"?POLICY_LIST.length:POLICY_LIST.filter(function(x){return x[2]===t;}).length;h+='<button class="catb'+(pState.plt===t?' on':'')+'" onclick="pState.plt=\''+t+'\';renderProducts()">'+(t==="All"?"All":t==="R"?"Restricted":t==="P"?"Prohibited":"STE only")+' ('+cnt+')</button>';});h+='</div>';
+    var m=0;
+    POLICY_LIST.forEach(function(x){if(pState.plt!=="All"&&x[2]!==pState.plt)return;if(q2&&(x[0]+" "+x[1]+" "+x[3]).toLowerCase().indexOf(q2)<0)return;m++;
+      h+='<div style="border:1px solid #eee;border-radius:10px;padding:8px 12px;margin-bottom:6px"><div style="display:flex;gap:8px;align-items:flex-start;justify-content:space-between"><div style="font-size:12px;font-weight:700;color:#1a1a1a">'+x[1]+'</div>'+plTag(x[2])+'</div><div style="font-size:11px;color:#888;margin-top:2px">ITC(HS) '+x[0]+'</div>'+(x[3]?'<div style="font-size:12px;color:#555;line-height:1.5;margin-top:3px">'+x[3]+'</div>':'')+'</div>';});
+    if(!m)h+='<div style="font-size:12px;color:#16a34a;padding:8px;font-weight:600">Not in the list → Free under Schedule 2 (still check the controls below and "subject to" notes).</div>';
+    h+='<div style="font-size:12px;font-weight:800;color:#1a1a1a;margin:14px 0 8px">🛂 Controls that apply even to Free items</div>';
+    CONTROLS.forEach(function(c){h+='<div style="font-size:12px;color:#333;line-height:1.5;padding:7px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;margin-bottom:5px"><b style="color:#2563eb">'+c[0]+':</b> '+c[1]+'</div>';});
+    h+='</div>';
+  }
+  return h+'</div>';
+}
+
+var pState={cat:"All",q:"",open:null,base:false,hs:false,hq:"",pl:false,plq:"",plt:"All"};
 var BASE_DOCS=[[1,"IEC"],[2,"GST + LUT"],[4,"Udyam"],[41,"DSC + ICEGATE"],[8,"Current account"],[9,"AD code + port registration"],[11,"FSSAI (all food items)"],[26,"Proforma invoice"],[27,"Sales contract"],[28,"Commercial invoice"],[29,"Packing list"],[16,"Certificate of origin"],[24,"Preferential COO / REX"],[21,"Marine insurance"],[39,"Shipping bill"],[40,"Bill of lading"],[34,"e-BRC"],[35,"RoDTEP"],[36,"Drawback"],[7,"ECGC"],[46,"Compliance calendar"]];
 function polColor(p){if(/^Prohibit/i.test(p))return "#dc2626";if(/^Free/i.test(p))return "#16a34a";return "#d97706";}
 function pToggle(id){pState.open=pState.open===id?null:id;renderProducts();if(pState.open){var e=document.getElementById("pc-"+id);if(e)e.scrollIntoView({behavior:"smooth",block:"start"});}}
@@ -1593,8 +1953,8 @@ function renderProducts(){
   var q=pState.q.toLowerCase();
   var list=CATALOG.filter(function(p){return (pState.cat==="All"||p.cat===pState.cat)&&(!q||(p.name+" "+p.hs+" "+p.ap+" "+p.board+" "+p.cat).toLowerCase().indexOf(q)>=0);});
   var h='<div style="background:linear-gradient(135deg,#f5f3ff,#eff6ff);border:1px solid #ddd6fe;border-radius:12px;padding:16px;margin-bottom:14px">';
-  h+='<div style="font-size:15px;font-weight:800;color:#7c3aed;margin-bottom:4px">📦 All Products — '+CATALOG.length+' export products, step by step</div>';
-  h+='<div style="font-size:12px;color:#5b21b6;line-height:1.5">Open any product for its export-policy status, registration board, product certificates, rules per market, how-to steps and rejection risks. Rules checked '+CAT_CHECKED+'. Policy changes often — confirm the item\'s status in ITC(HS) Schedule 2 on dgft.gov.in and with your board/EPC before you sign a contract.</div></div>';
+  h+='<div style="font-size:15px;font-weight:800;color:#7c3aed;margin-bottom:4px">📦 All Products — '+CATALOG.length+' export products, step by step + every HS chapter</div>';
+  h+='<div style="font-size:12px;color:#5b21b6;line-height:1.5">Open any product for its export-policy status, registration board, product certificates, rules per market, how-to steps and rejection risks. Product not listed? Use the HS-chapter guide and the Restricted/Prohibited list below — anything not on that list is Free to export. Rules checked '+CAT_CHECKED+'. Policy changes often — confirm the item\'s status in ITC(HS) Schedule 2 on dgft.gov.in and with your board/EPC before you sign a contract.</div></div>';
   // common base
   h+='<div style="background:white;border:1px solid #e8e8e4;border-radius:12px;margin-bottom:14px">';
   h+='<div onclick="pState.base=!pState.base;renderProducts()" style="padding:12px 14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center"><div style="font-size:13px;font-weight:800;color:#1a1a1a">🧱 Common base — needed for EVERY product</div><span style="color:#7c3aed;font-weight:700">'+(pState.base?'▲':'▼')+'</span></div>';
@@ -1604,6 +1964,7 @@ function renderProducts(){
     h+='</div></div>';
   }
   h+='</div>';
+  h+=renderPolicySections();
   // controls
   h+='<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">';
   h+='<select onchange="pJump(this.value)" style="flex:1;min-width:220px;padding:9px 10px;border:1px solid #ddd6fe;border-radius:10px;font-family:Inter,sans-serif;font-size:13px;background:white;color:#1a1a1a"><option value="">▼ Jump to a product…</option>';
