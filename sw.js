@@ -1,6 +1,6 @@
 // Export Command Center service worker: offline copy of the app shell.
 // Bump CACHE when index.html changes so users get the new version.
-var CACHE = 'ecc-v5-1';
+var CACHE = 'ecc-v5-2';
 var ASSETS = ['./', './index.html', './manifest.json', './icons/icon-192.png', './icons/icon-512.png', './icons/icon-180.png', './icons/favicon-32.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(ASSETS); }).then(function () { return self.skipWaiting(); }));
